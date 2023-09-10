@@ -177,9 +177,9 @@ class Dat(Export):
             # Read next block without waitbars
             self.read_next_block(tqdm_on=False)
             # And update this one manually
-            pbar.update(np.around(
+            pbar.update(int(np.around(
                 (self.blocks[nBlock].end - self.blocks[nBlock].start),
-                4).astype(np.int))
+                4))) #it was .astype(np.int)
 
             nBlock += 1
 

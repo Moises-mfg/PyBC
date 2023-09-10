@@ -5,6 +5,13 @@ Examples for using dat class
 # %% Imports
 
 from pybit.py3.chain import Dat
+import os
+
+
+# %% Set path to .dat files
+target_directory = '/home/moises/PyBC/pybit'
+os.chdir(target_directory)
+
 
 # %% Read .dat
 path = 'Blocks/'

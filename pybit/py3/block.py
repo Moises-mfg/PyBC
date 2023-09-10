@@ -576,6 +576,8 @@ class Trans(Common, API, Export):
     def to_dict_full(self) -> dict:
         """Return transaction as dict.
 
+
+        # I Moisés need to get all the inputs and outputs 
         Convert transaction to dict, get (for now) first input and first output
         only.
 
